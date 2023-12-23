@@ -24,6 +24,14 @@
     /* border: 3px solid red; */
     float:left ;
 }
+.PPI img{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    left: ;
+}
+
+
 
 .avatar_img{
     
@@ -204,6 +212,7 @@
     height:300px ;  /* 图片的高度 */
     border-radius: 20px 20px 0px 0px;
     transition: 512ms all;
+    object-fit: cover;  /* 让图片不变形但可能会被裁剪 */
 }
 .Blog_Dock a img:hover{
     transform: scale(1.1);
@@ -295,7 +304,7 @@ bottom: 5px;
     
     width: 100%;
     height:300px ;  /* 图片的高度 */
-    
+    margin-bottom:30px;
     border-radius: 20px;
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.055);
     text-decoration: none;
@@ -321,6 +330,7 @@ bottom: 5px;
     height:200px ;  /* 图片的高度 */
     border-radius: 20px 20px 0px 0px;
     transition: 512ms all;
+    object-fit: cover;  /* 让图片不变形但可能会被裁剪 */
 }
 
 .flow a img:hover{

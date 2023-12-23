@@ -1,0 +1,120 @@
+.Blog_Download{
+    
+}
+
+
+.Blog_Download{
+    position: relative;
+    display: flex;
+    /* border: 3px solid blue; */
+    
+    height: 100%;
+    width: 80%;
+    margin: 20px;
+    
+    transform: translateX(1px);
+    /* margin-left: 25%; */
+    max-width: 1000px;
+    min-width: 100px; 
+    height: 100%;
+    flex-direction: column;     /* 将主轴 翻转 构成 博文上下文排列 */
+    float: left;
+}
+.dock{
+    position: relative;
+    width: 100%;
+    height: 100px;  /* 白色文字底 */
+    
+    /* margin-left: 100%; */
+    
+    
+}
+
+.Blog_Download a{
+    background-color: #fefefe;
+    /* border:3px solid green; */
+    
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;  /* 删去这行代码 将会改变联动动态效果 */
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.11);
+    text-decoration: none;
+    color: black;
+    overflow: hidden;  /* 图片超出的部分不可见 */
+    transition: 512ms all;
+}
+.Blog_Download a:hover{
+    height: 450px;
+    transition: 512ms all;
+}
+.Blog_Download a img{
+    position: relative;
+    background-color: #fefefe;
+    width: 100%;
+    height:300px ;  /* 图片的高度 */
+    border-radius: 20px 20px 0px 0px;
+    transition: 512ms all;
+    object-fit: cover;  /* 让图片不变形但可能会被裁剪 */
+}
+.Blog_Download a img:hover{
+    transform: scale(1.1);
+    transition: 512ms all;
+    height:350px;
+    
+    
+}
+
+.Blog_Download a hr{
+position: relative;
+bottom: 5px;
+}
+.Blog_Download a div{
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}
+.Blog_Download a div p{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.596);
+}
+.Blog_Download a div span{
+    transition: 512ms all;
+}
+
+
+.Blog_Download a div span:hover{
+    transition: 512ms all;
+    letter-spacing: 3px;
+    background-image:-webkit-linear-gradient(top, #b542b6,#32237f,#902163);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    
+}
+
+.downloadButton{
+    position: absolute;
+    background-color: #87f89f;
+    border:none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-right: auto;
+    cursor: pointer;
+    left: 610px;
+    bottom: 35px;
+}
+.downloadButton2{
+    position: absolute;
+    background-color: #87f89f;
+    border:none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-right: auto;
+    cursor: pointer;
+    left: 320px;
+    bottom: 35px;
+}
