@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #ededee;
+}
+/* ********************************************************************************************* 类公文模板 */
 header{
     background-color: rgb(8, 7, 114);
     width: 100%;
@@ -29,4 +33,75 @@ header p{
     
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ********************************************************************************************* 简洁居中模板 */
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
+h1,h2,h3{
+    border-bottom: 1px solid rgba(177, 171, 171, 0.479);
+    padding-bottom: 10px;
+}
+p{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+ul{
+    padding-left: 40px;
+    li{
+        padding-bottom: 10px;
+    }
+}
+#lianxi{
+    color: #055a7c;
+    text-decoration: none;
+}
+#lianxi:hover{
+    text-decoration:underline;
+}
+
+.zhuti_waiceng{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.zhuti{
+    position: relative;
+    margin:0 auto;
+
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+}
+button{
+    position: relative;
+    display: inline-block;
+    background-color: #055a7c;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border:none;
+    
+
+
+    img{
+        position: relative;
+        width: 30px;
+        transform: rotate(225deg);
+        top: 5px;
+    }
+    p{
+        position: relative;
+        top:-15px
+    }
+    cursor: pointer;
+    
 }
