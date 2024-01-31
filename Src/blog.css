@@ -1,29 +1,46 @@
-/*##################    全局    #################################*/
+:root{
+    --color-mianban_tools:#fefefe;
+    --color-light:rgba(132, 139, 200, 0.226);
+
+
+
+
+
+
+
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+    --broder-radius_tools:20px;
+}
+
 
 *{
     padding: 0;
     margin: 0;
 }
-/*##############################   Mylist大类   #############################*/
-
-.mydiban{
-    height: 100%;
-    width: 25%;
-    max-width: 340px;
-    min-width: 200px;
-    border: 3px solid #dfdfdf00;
-    float:left ;
-}
 
 .Mylist{
     position: fixed;
-    height: 100%;
+    height: 88vh;
     width: 25%;
-    max-width: 340px;
+    top: 3.5rem;
+    max-width: 260px;
     min-width: 200px;
+    margin-left: 30px;
+    background-color: var(--color-mianban_tools);
+    border-radius:var(--broder-radius_tools) ;
+    box-shadow:var(--box-shadow);
     /* border: 3px solid red; */
     float:left ;
+    transition:all 0.3s ease;
 }
+
+.Mylist:hover{
+    box-shadow: none;
+    transition:all 0.3s ease;
+    
+}
+
 .PPI img{
     position:absolute;
     width: 200px;
@@ -32,8 +49,6 @@
     top: 90px;
     z-index: 2;
 }
-
-
 
 .avatar_img{
     
@@ -54,6 +69,7 @@
     border-radius: 100px;
     transition: 256ms all;
 }
+
 .avatar_img:hover{
     position: relative;
     transform: scale(1.1);
@@ -65,6 +81,7 @@
     
     
 }
+
 #camera{
     box-shadow: 0px 10px 40px 5px rgba(0, 0, 0, 0.164);
     position: relative;
@@ -88,13 +105,13 @@
     height: 30px;
     bottom: -6px;
     left: 2.5px;
-
-    
 }
+
 #title{
     margin-bottom: 40px;
     transition: 512ms all;
 }
+
 #title:hover{
     transition: 256ms all;
     background-image:-webkit-linear-gradient(top, #b542b6,#32237f,#902163);
@@ -102,26 +119,30 @@
     -webkit-text-fill-color:transparent;
     letter-spacing: 3px;    /* 字间距 */
 }
+
 #title h2{
     text-align: center;
     margin: 15px;
     
 }
+
 #title p{
     text-align: center;
     font-size: 14px;
     
 }
+
 .Nav div{
     transform: translateX(50px);
 }
+
 .Nav a img{
     position: relative;
     height: 20px;
     width:20px;
     text-align: center;
-
 }
+
 .Nav a span{
     display: inline-block;
     position: relative;
@@ -134,6 +155,7 @@
     color: black;
     transition: 256ms all;
 }
+
 .Nav a span:hover{
     transition: 256ms all;
     background-image:-webkit-linear-gradient(top, #b542b6,#32237f,#902163);
@@ -141,27 +163,36 @@
     -webkit-text-fill-color:transparent;
     text-indent: 20px;  /* 文字缩进 */
     letter-spacing: 3px;
-
 }
+
 .Nav{
+     margin-top: 20px;
     width: 100%;
-    
-    
-   
-
 }
+
 .Nav a {
+    
     text-decoration: none;
     margin: 200px;
     
 }
+
 .Nav div{
+    position: relative;
     text-align: center;
     transform: translateX(0px);
+   
+    padding: 24px 20px;
+    left: 24px;
+}
+
+.Nav div:last-child{
+    position: absolute;
+    bottom: -0.5rem;
+    
 }
 
 /*##############################  Blog文档及img大类   #############################*/
-
 .Blog_Dock{
     position: relative;
     display: flex;
@@ -179,14 +210,13 @@
     flex-direction: column;     /* 将主轴 翻转 构成 博文上下文排列 */
     float: left;
 }
+
 .dock{
     position: relative;
     width: 100%;
     height: 100px;  /* 白色文字底 */
     
     /* margin-left: 100%; */
-    
-    
 }
 
 .Blog_Dock a {
@@ -204,10 +234,12 @@
     overflow: hidden;  /* 图片超出的部分不可见 */
     transition: 512ms all;
 }
+
 .Blog_Dock a:hover{
     height: 450px;
     transition: 512ms all;
 }
+
 .Blog_Dock a img{
     position: relative;
     background-color: #fefefe;
@@ -217,32 +249,32 @@
     transition: 512ms all;
     object-fit: cover;  /* 让图片不变形但可能会被裁剪 */
 }
+
 .Blog_Dock a img:hover{
     transform: scale(1.1);
     transition: 512ms all;
     height:350px;
-    
-    
 }
 
 .Blog_Dock a hr{
 position: relative;
 bottom: 5px;
 }
+
 .Blog_Dock a div{
     position: relative;
     top: 20px;
     left: 20px;
-
 }
+
 .Blog_Dock a div p{
     font-size: 13px;
     color: rgba(0, 0, 0, 0.596);
 }
+
 .Blog_Dock a div span{
     transition: 512ms all;
 }
-
 
 .Blog_Dock a div span:hover{
     transition: 512ms all;
@@ -250,13 +282,13 @@ bottom: 5px;
     background-image:-webkit-linear-gradient(top, #b542b6,#32237f,#902163);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    
 }
+
 /*##############################   心巷徊音        #############################*/
 .flow_titie{
     
     position: relative;
-    margin-bottom: 5px;
+    
     border-radius: 10px 10px 10px 10px ;
     height: 50px;
     width: 100%;
@@ -264,6 +296,7 @@ bottom: 5px;
     box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.11);
     text-align: center;
 }
+
 .flow_titie p{
     display: block;
     text-align: center;
@@ -271,6 +304,7 @@ bottom: 5px;
     transition: 512ms all;
     letter-spacing: 3px;
 }
+
 .flow_titie p:hover{
     transition: 512ms all;
     letter-spacing: 10px;
@@ -279,7 +313,6 @@ bottom: 5px;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
-
 
 .flow{
     position: relative;
@@ -299,12 +332,11 @@ bottom: 5px;
     bottom: -30px;
     flex-direction: column; 
 }
+
 .flow a{
     position: relative;
     background-color: #fefefe;
     /* border:3px solid green; */
-
-    
     width: 100%;
     height:300px ;  /* 图片的高度 */
     margin-bottom:30px;
@@ -324,6 +356,7 @@ bottom: 5px;
     border-radius: 20px 20px 20px 20px;
     transition: 512ms all;
 }
+
 .flow a img{
     position: relative;
     background-color: #fefefe;
@@ -370,12 +403,14 @@ bottom: 5px;
 
     /* grid-template-columns: 250px 3fr 150px; */
     max-width: 800px;
-    grid-template-columns: 300px 1000px;
+    grid-template-columns: 300px 1000px 1000px;
+    
     
 }
-.twoG{
+
+/* .twoG{
     width: 900px;
     display: grid;
     grid-column-gap:-1cm;
     grid-template-columns: 1000px 100%;
-}
+} */
