@@ -408,9 +408,9 @@ bottom: 5px;
     
 }
 
-/* .twoG{
+.twoG{
     width: 900px;
     display: grid;
     grid-column-gap:-1cm;
     grid-template-columns: 1000px 100%;
-} */
+}
