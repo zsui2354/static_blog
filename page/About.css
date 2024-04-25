@@ -17,7 +17,9 @@
     font-style: normal;
     transition: all 0.3s ease;
 }
-
+html{
+    overflow: hidden;
+}
 body{
     overflow: hidden;
     
@@ -36,7 +38,7 @@ body{
 /*     border:2px solid green; */
     position: absolute;
     height: 100vh;
-    width: 1000%;
+    width: 100%;
     background-color: var(--color-write);
     z-index: 5;
     right: 69.5rem;
@@ -178,16 +180,28 @@ body{
 }
 
 @media (max-width: 430px) {
+    body{
+        overflow: hidden;
+    }
     /* 在这里添加你想要应用的样式 */
     .container .Text h1{
         font-size: 80px;
         line-height: 200px;
     }
+    .write_diban{
+        /*     border:2px solid red; */
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-color: var(--color-black);
+            overflow: hidden;
+        }
     .black_diban{
         /*     border:2px solid green; */
             position: absolute;
             height: 100vh;
             width: 1000%;
+            /* width: 700px; */
             background-color: var(--color-write);
             z-index: 5;
             right: 45rem;
