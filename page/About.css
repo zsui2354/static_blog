@@ -39,7 +39,7 @@ body{
     width: 1000%;
     background-color: var(--color-write);
     z-index: 5;
-    right: 45rem;
+    right: 69.5rem;
     transform:skew(115deg);
     
 }
@@ -120,7 +120,24 @@ body{
 
 
 
+@media (max-width: 1600px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
 
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 67rem;
+            transform:skew(105deg);
+            
+        }
+}
 
 
 @media (max-width: 975px) {
@@ -142,12 +159,113 @@ body{
         }
 }
 
+
+
 @media (max-width: 657px) {
     /* 在这里添加你想要应用的样式 */
     .container .Text h1{
         font-size: 80px;
     }
 
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+            
+        }
     
+}
+
+
+@media (max-width: 651px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+        line-height: 200px;
+    }
+
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+            
+        }
+    
+}
+  
+  
+@media (max-width: 430px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+        line-height: 200px;
+    }
+
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(92.8deg);
+            
+        }
+    
+
+
+        .container .jump{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            padding: 10px;
+            width: 100%;
+            
+        }
+        
+        
+        
+        .container .jump ul{
+            display: block;
+            padding: 20px;
+            font-size: 24px;
+            width: 100%;
+        }
+        
+        .container .jump ul li{
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .container .jump ul li a{
+            position: relative;
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            padding: 5px;
+            width: 100%;
+        }
+        
+        .container .jump ul li a:hover{
+            border-bottom: 2px solid #fff;
+            width: 50%;
+        }
 }
   
