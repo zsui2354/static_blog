@@ -1,9 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+
+:root{
+    --box-shadow:0 5px 15px rgba(0,0,0,0.35);
+    --color-black:rgb(15, 15, 15);
+    --color-write:#fff;
+}
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Zhi Mang Xing", cursive;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease;
+}
+html{
+    overflow: hidden;
 }
 body{
-    transition: all 0.3 ease-in-out;
+    overflow: hidden;
+    
+}
+
+.write_diban{
+/*     border:2px solid red; */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-black);
+    
+}
+
+.black_diban{
+/*     border:2px solid green; */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-write);
+    z-index: 5;
+    right: 69.5rem;
+    transform:skew(115deg);
+    
+}
+
+.container{
+    position: absolute;
+    z-index: 10;
+/*     border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    mix-blend-mode: difference;
+}
+
+.container .Text{
+/*     border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+     mix-blend-mode: difference;
+}
+
+.container .Text h1{
+    font-size: 120px;
+    /* letter-spacing: 7px; */
+    color: #fff;
+}
+
+.container .biaoti{
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+/*     border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.container .jump{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.container .jump ul{
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container .jump ul li a{
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+
+}
+
+.container .jump ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 1600px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 67rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 975px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 657px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 651px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+        line-height: 200px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 430px) {
+    body{
+        overflow: hidden;
+    }
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+        line-height: 200px;
+    }
+    .write_diban{
+        /*     border:2px solid red; */
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-color: var(--color-black);
+            overflow: hidden;
+        }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            /* width: 700px; */
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(92.8deg);
+        }
+        .container .jump{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            padding: 10px;
+            width: 100%;
+        }
+        .container .jump ul{
+            display: block;
+            padding: 20px;
+            font-size: 24px;
+            width: 100%;
+        }
+        .container .jump ul li{
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .container .jump ul li a{
+            position: relative;
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            padding: 5px;
+            width: 100%;
+        }
+        .container .jump ul li a:hover{
+            border-bottom: 2px solid #fff;
+            width: 50%;
+        }
 }

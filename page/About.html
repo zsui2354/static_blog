@@ -3,71 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas 示例</title>
-    <style>
-        /* 在 CSS 中设置 Canvas 元素的样式 */
-        canvas {
-            border: 1px solid black; /* 为了可视化效果添加边框 */
-        }
-        button{
-            width: 100px;
-            height: 100px;
-            font-size: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="About.css">
+    <title>关于我</title>
 </head>
 <body>
-    <!-- 在 HTML 中创建 Canvas 元素 -->
-    <h1 id="H">Hello , world</h1>
-    <a href="www.baidu.com" id="myLink">点击我触发事件</a>
-
-
-
-
-
-
-
-
-
-
-    <script>
-var link = document.getElementById('myLink');
-
-// 添加点击事件监听器
-link.addEventListener('click', function(event) {
-    // 阻止默认链接行为
-    
-    // 这里是触发事件后要执行的代码
-    var H = document.getElementById('H');
-    H.innerText = '链接被点击了'
-});
-
-
-
-
-
-
-
-
-
-
-
-
-/*         // 在 JavaScript 中获取 Canvas 元素
-        var canvas = document.getElementById('myCanvas');
-
-        // 检查浏览器是否支持 Canvas
-        if (canvas.getContext) {
-            // 获取绘图上下文
-            var ctx = canvas.getContext('2d');
-
-            // 绘制一个简单的矩形
-            ctx.fillStyle = 'lightblue'; // 设置填充颜色
-            ctx.fillRect(0, 0, 200, 200); // 绘制矩形，参数分别为 x, y, width, height
-        } else {
-            // 如果浏览器不支持 Canvas，则提供替代内容
-            canvas.innerHTML = '抱歉，你的浏览器不支持 Canvas。';
-        } */
-    </script>
+    <div class="write_diban">
+        <div class="black_diban"></div>
+        <div class="container">
+            <div class="Text">
+                <h1 class="Mov_box" id="Wenzi">生命不息，折腾不止</h1>
+            </div>
+            <div class="biaoti"><h3>王果冻的主页</h3></div>
+            <div class="jump">
+                <ul>
+                    <li><a href="../index.html">个人博客</a></li>
+                    <li><a href="https://github.com/zsui2354">GitHub</a></li>
+                    <li><a href="http://site.vyantaosheweining.top:3000/">博客论坛</a></li>
+                    <li><a href="https://twitter.com/aidegongjue1/">X | Twitter</a></li>
+                    <li><a href="mailto:h2118820285@outlook.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<ul>
+    <li></li>
+</ul>
+    <script src="./About.js"></script>
 </body>
 </html>
