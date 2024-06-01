@@ -82,6 +82,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    transform: translateY(-10px);
 }
 
 .container .jump{
@@ -238,6 +239,7 @@ body{
             border-bottom: 2px solid #fff;
             padding: 5px;
             width: 100%;
+            transform: translateY(-30px);
         }
         .container .jump ul li a:hover{
             border-bottom: 2px solid #fff;
