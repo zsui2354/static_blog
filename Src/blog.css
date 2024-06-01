@@ -61,16 +61,20 @@
     transition: 256ms all;
 }
 
+
 .avatar_img:hover{
     position: relative;
     transform: scale(1.1);
     
     /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
-    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.308);
+    /* box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.308); */
     transform: translateY(-10px);
     transition: 512ms all;
     
     
+}
+.avatar_img img:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.308);
 }
 
 #camera{
