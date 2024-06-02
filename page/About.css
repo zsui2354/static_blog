@@ -99,12 +99,13 @@ body{
     padding: 20px;
     font-size: 24px;
 }
-
+.container .jump ul a #Issues{
+    display: none;
+}
 .container .jump ul li a{
     color: #fff;
     margin: 0 20px;
     text-decoration: none;
-
 }
 
 .container .jump ul li a:hover{
@@ -244,5 +245,22 @@ body{
         .container .jump ul li a:hover{
             border-bottom: 2px solid #fff;
             width: 50%;
+        }
+        .container .jump ul a .Issues{
+            display: block;
+            position:absolute;
+            border-radius: 100px;
+            width: 60px;
+            top: 0px;
+            left: 12.9rem;
+            height: 30px;
+            /* border: 2px solid red; */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;
+            font-weight: 900;
+            letter-spacing: -3px;
+            background-color: #fff;
+            color: #333;
+            
         }
 }

@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="About.css">
     <title>关于我</title>
 </head>
+
 <body>
+    
+
+
+
     <div class="write_diban">
         <div class="black_diban"></div>
         <div class="container">
             <div class="Text">
-                <h1 class="Mov_box" id="Wenzi">生命不息，折腾不止</h1>
+                <h1 class="Mov_box" id="Wenzi">生命不息 &nbsp&nbsp&nbsp&nbsp&nbsp折腾不止</h1>
             </div>
             <div class="biaoti"><h3>王果冻的主页</h3></div>
             <div class="jump">
                 <ul>
                     <li><a href="../index.html">个人博客</a></li>
                     <li><a href="https://github.com/zsui2354">GitHub</a></li>
-                    <li><a href="https://github.com/zsui2354/zsui2354.Blogforums/issues">博客论坛</a></li>
+                    <li><a href="https://github.com/zsui2354/zsui2354.Blogforums/issues">博客论坛<div id="Issues"></div></a></li>
                     <li><a href="https://twitter.com/aidegongjue1/">X | Twitter</a></li>
                     <li><a href="mailto:h2118820285@outlook.com">Email</a></li>
                 </ul>
@@ -31,6 +36,40 @@
 <ul>
     <li></li>
 </ul>
+
     <script src="./About.js"></script>
+
+    <script>
+    const owner = 'zsui2354'; // 例如：'octocat'
+    const repo = 'zsui2354.Blogforums';   // 例如：'Hello-World'
+    
+    async function getIssueCount(owner, repo) {
+        const url = `https://api.github.com/repos/${owner}/${repo}/issues?state=open`;
+        
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+    
+            if (!response.ok) {
+                throw new Error(`GitHub API 请求失败: ${response.status}`);
+            }
+    
+            const issues = await response.json();
+            return issues.length;
+        } catch (error) {
+            console.error('获取Issues数量时出错:', error);
+        }
+    }
+    // 调用函数并输出结果
+    getIssueCount(owner, repo).then(count => {
+        console.log(`仓库 ${owner}/${repo} 共有 ${count} 个开放的Issue`);
+        
+         var obj_bloger = document.getElementById('Issues').textContent = `${count} 条`;
+    });
+    
+        </script>
 </body>
 </html>
