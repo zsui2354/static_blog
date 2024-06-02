@@ -239,10 +239,7 @@ body{
         font-size: 80px;
         line-height: 200px;
     }
-    #Wenzi{
-        line-height:286px;
-        transform: translateY(630px); 
-    }
+
     .black_diban{
         /*     border:2px solid green; */
             position: absolute;
@@ -319,11 +316,7 @@ body{
         line-height:286px;
         transform: translateY(630px); 
      */
-     #Wenzi{
-        line-height:-286px;
-        transform: translateY(630px);
-      
-     }
+
     .container .Text h1{
         font-size: 80px;
         line-height: 200px;
