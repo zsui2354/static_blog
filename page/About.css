@@ -129,6 +129,58 @@ body{
         }
 }
 
+@media (max-width: 1434px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 65rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 1221px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 60rem;
+            transform:skew(105deg);
+        }
+}
+
+@media (max-width: 1079px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 55rem;
+            transform:skew(105deg);
+        }
+}
+
+
 @media (max-width: 975px) {
     /* 在这里添加你想要应用的样式 */
     .container .Text h1{
@@ -181,11 +233,97 @@ body{
         }
 }
 
+@media (max-width: 651px) {
+    /* 在这里添加你想要应用的样式 */
+    .container .Text h1{
+        font-size: 80px;
+        line-height: 200px;
+    }
+    #Wenzi{
+        line-height:286px;
+        transform: translateY(630px); 
+    }
+    .black_diban{
+        /*     border:2px solid green; */
+            position: absolute;
+            height: 100vh;
+            width: 1000%;
+            background-color: var(--color-write);
+            z-index: 5;
+            right: 45rem;
+            transform:skew(105deg);
+        }
+        .container .jump{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            padding: 10px;
+            width: 100%;
+        }
+        .container .jump ul{
+            display: block;
+            padding: 20px;
+            font-size: 24px;
+            width: 100%;
+        }
+        .container .jump ul li{
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .container .jump ul li a{
+            position: relative;
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            padding: 5px;
+            width: 100%;
+            transform: translateY(-30px);
+        }
+        .container .jump ul li a:hover{
+            border-bottom: 2px solid #fff;
+            width: 50%;
+        }
+        .container .jump ul a #Issues{
+            display: block;
+            position:absolute;
+            border-radius: 100px;
+            width: 60px;
+            top: 7px;
+            left: 12.9rem;
+            height: 30px;
+            /* border: 2px solid red; */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;
+            font-weight: 900;
+            letter-spacing: -3px;
+            color: #fff;
+            
+        }
+}
+
 @media (max-width: 430px) {
     body{
         overflow: hidden;
     }
     /* 在这里添加你想要应用的样式 */
+    /* 
+
+        #Wenzi{
+        line-height:286px;
+        transform: translateY(630px); 
+     */
+     #Wenzi{
+        line-height:-286px;
+        transform: translateY(630px);
+      
+     }
     .container .Text h1{
         font-size: 80px;
         line-height: 200px;
@@ -246,12 +384,12 @@ body{
             border-bottom: 2px solid #fff;
             width: 50%;
         }
-        .container .jump ul a .Issues{
+        .container .jump ul a #Issues{
             display: block;
             position:absolute;
             border-radius: 100px;
             width: 60px;
-            top: 0px;
+            top: 7px;
             left: 12.9rem;
             height: 30px;
             /* border: 2px solid red; */
@@ -259,8 +397,8 @@ body{
             font-size: 17px;
             font-weight: 900;
             letter-spacing: -3px;
-            background-color: #fff;
-            color: #333;
+            color: #fff;
             
         }
 }
+
