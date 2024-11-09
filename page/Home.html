@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="博客" content="王果冻的个人博客">
+    <meta name="author" content="王果冻">
+    <meta name="copyright" content="Copyright © 2024">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0"> 
+    <title>王果冻的空间</title>
+    <link rel="stylesheet" href="../Src/blog.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../vue.min.js"></script>
+</head>
+<body style="background-color: #ededee;">
+    <div id="app" class="diban">
+
+
+
+
+        <div class="twoG"></div>
+        <div class="Mylist">
+            
+            
+            <div class="avatar">
+                <div class="avatar_img">
+                    <img src="https://s2.loli.net/2024/11/09/Ihr3yOdENmSoLlf.jpg" alt="404">
+                    <div id="camera"> <img src="../img/instagram.svg" alt="404"></div>
+                </div>
+            </div>
+
+            <div id="title">
+                
+                <h2>王果冻的空间</h2>
+                
+                <p>生命不息，折腾不止</p>
+            </div>
+
+            <div class="Nav">
+                        <div><a href="./Home.html"><div><img src="../img/home.svg" alt="404">
+                        <span><strong>Home</strong></span></div></a></div>
+
+                        <div><a href="../index.html"><div><img src="../img/user.svg" alt="404">
+                        <span><strong>About</strong></span></div></a></div>
+
+                        <div><a href="./Download.html"><div><img src="../img/soundcloud.svg" alt="404" style=" position: relative; left: 3px;">
+                        <span><strong>Download</strong></span></div></a></div>
+
+                        <div class="Logo">
+                        <div><a href=""><div><img src="https://s2.loli.net/2024/11/09/tvS8Axn7LlKDCsG.jpg" alt="404" style="width: 120px; height: 80px; left: -20px;"><br>
+                            </div></a></div></div>
+            </div>
+        </div>
+        <div class="Blog_Dock"></div>
+        <div class="flow"><!-- <div class="flow_titie"><p>心巷徊音</p></div> --></div>
+    </div>
+</body>
+<script>
+new Vue({
+    el: "#app",
+    data: { 
+        Posts: [
+            {
+                title: "信息安全技术漫谈 论打印机的隐匿安全性 “黄点追踪技术”",
+                send: "2023-12-22",
+                img: "https://s2.loli.net/2024/11/09/fG5FncTD8oSNRQC.jpg",
+                link: "../post/2.Yellow dot tracking technology/Yellow dot tracking technology.html"
+            },
+            {
+                title: "开辟博客空间宣言",
+                send: "2023-12-21",
+                img: "https://s2.loli.net/2024/11/09/b7QiG3XUmxwdWlk.jpg",
+                link: "../post/1.Declaration of opening up a blog space/blog_page.html"
+            }
+        ],
+        flow:[
+            {
+                title: "约翰·佩里·巴洛：独立于物理世界，与身心完全相同 — 网络空间独立宣言",
+                send: "2023-12-1",
+                img: "https://s2.loli.net/2024/11/09/LwOuqnyve9aNQ5g.jpg",
+                link: "../flow/1.Declaration of Independence of Cyberspace/Declaration of Independence of Cyberspace.html"
+            }
+        ]
+    },
+    methods: {
+/*         getData() {
+            axios.get("https://jsonplaceholder.typicode.com/posts")
+                .then(result => {
+                    this.Posts = result.data; // 将获取的数据赋值给 Posts
+                    alert("执行成功");
+                })
+                .catch(error => {
+                    console.error("获取数据失败:", error);
+                });
+        } */
+    },
+    mounted() {
+        this.Posts.forEach(Pdata => {
+            $(".Blog_Dock").append(`
+                <a id="blog_img" href="${Pdata.link}">
+                    <img src="${Pdata.img}">
+                    <div class="dock">
+                        <span><strong>${Pdata.title}</strong></span><br><br>
+                        <p>发表于: ${Pdata.send}</p>
+                    </div>
+                </a>
+            `);
+        });
+        this.flow.forEach(Fdata => {
+            $(".flow").append(`
+                <a id="blog_img" href="${Fdata.link}">
+                    <img src="${Fdata.img}">
+                    <div class="dock">
+                        <span><strong>${Fdata.title}</strong></span><br><br>
+                        <p>发表于: ${Fdata.send}</p>
+                    </div>
+                </a>
+            `);
+        });
+    }
+});
+</script>
+</html>

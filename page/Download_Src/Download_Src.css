@@ -62,10 +62,7 @@
     transform: scale(1.1);
     transition: 512ms all;
     height:350px;
-    
-    
 }
-
 .Blog_Download a hr{
 position: relative;
 bottom: 5px;
@@ -74,26 +71,21 @@ bottom: 5px;
     position: relative;
     top: 20px;
     left: 20px;
-
 }
 .Blog_Download a div p{
     font-size: 13px;
     color: rgba(0, 0, 0, 0.596);
 }
-.Blog_Download a div span{
+span{
     transition: 512ms all;
 }
-
-
-.Blog_Download a div span:hover{
+span:hover{
     transition: 512ms all;
     letter-spacing: 3px;
     background-image:-webkit-linear-gradient(top, #b542b6,#32237f,#902163);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    
 }
-
 .downloadButton{
     position: absolute;
     background-color: #87f89f;
@@ -115,6 +107,6 @@ bottom: 5px;
     height: 40px;
     margin-right: auto;
     cursor: pointer;
-    left: 320px;
+    left: 380px;
     bottom: 35px;
 }

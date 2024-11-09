@@ -3,121 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="博客" content="王果冻的个人博客">
-    <meta name="author" content="王果冻">
-    <meta name="copyright" content="Copyright © 2024">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0"> 
-    <title>王果冻的空间</title>
-    <link rel="stylesheet" href="./Src/blog.css">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="About.css">
+    <title>关于我</title>
 </head>
-<body style="background-color: #ededee;">
-    <div class="diban">
 
-
-
-
-        <div class="twoG"></div>
-        <div class="Mylist">
-            
-            
-            <div class="avatar">
-                <div class="avatar_img">
-                    <img src="./img/IMG_20231109_231523_030.jpg" alt="404">
-                    <div id="camera"> <img src="img/instagram.svg" alt="404"></div>
-                </div>
+<body>
+    <div class="write_diban">
+        <div class="black_diban"></div>
+        <div class="container">
+            <div class="Text">
+                <h1 class="Mov_box" id="Wenzi">生命不息 ， 折腾不止</h1>
             </div>
-
-            <div id="title">
-                
-                <h2>王果冻的空间</h2>
-                
-                <p>生命不息，折腾不止</p>
-            </div>
-
-            <div class="Nav">
-                        <div><a href="./index.html"><div><img src="./img/home.svg" alt="404">
-                        <span><strong>Home</strong></span></div></a></div>
-
-                        <div><a href="./page/About.html"><div><img src="./img/user.svg" alt="404">
-                        <span><strong>About</strong></span></div></a></div>
-
-                        <div><a href="./page/Download.html"><div><img src="./img/soundcloud.svg" alt="404" style=" position: relative; left: 3px;">
-                        <span><strong>Download</strong></span></div></a></div>
-
-                        <div class="Logo">
-                        <div><a href=""><div><img src="img/Logo.png" alt="404" style="width: 120px; height: 80px; left: -20px;"><br>
-                            </div></a></div></div>
-                            
+            <div class="biaoti"><h3>王果冻的主页</h3></div>
+            <div class="jump">
+                <ul>
+                    <li><a href="https://zsui2354.github.io/">个人博客</a></li>
+                    <li><a href="https://github.com/zsui2354">GitHub</a></li>
+                    <li><a href="./page/Home.html">个人空间<!-- <div id="Issues"></div> --></a></li>
+                    <li><a href="https://twitter.com/aidegongjue1/">X | Twitter</a></li>
+                    <li><a href="mailto:h2118820285@outlook.com">Email</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+<ul>
+    <li></li>
+</ul>
 
+    <script src="./About.js"></script>
 
-
-
+    <script>
+    const owner = 'zsui2354'; // 例如：'octocat'
+    const repo = 'zsui2354.Blogforums';   // 例如：'Hello-World'
+    
+    async function getIssueCount(owner, repo) {
+        const url = `https://api.github.com/repos/${owner}/${repo}/issues?state=open`;
         
-        <div class="Blog_Dock">
-<!-- 
-                3 漫谈“人声音频的处理及行业规范” 
-                <a v-slide-in; id="blog_img" href="./post/1.Declaration of opening up a blog space/blog_page.html"> 
-                    <img src="./post/3.Discussing Vocal Audio Processing and Industry Standards/3.Discussing Vocal Audio Processing and Industry Standards.jpg" alt="404" >
-                    <div class="dock">
-                        <span><strong>漫谈“人声音频的处理及行业规范 Or 技术扫盲”</strong></span><br><br>
-                        <p>发表于  2023-12-23</p>
-                    </div>
-                </a>
-
--->
-                <!--2  "信息安全技术漫谈 论打印机的隐匿安全性 “黄点追踪技术”  -->
-                <a v-slide-in; id="blog_img" href="./post/2.Yellow dot tracking technology/Yellow dot tracking technology.html"> 
-                    <img src="./post/2.Yellow dot tracking technology/Yellow dot tracking technology.jpg" alt="404" >
-                    <div class="dock">
-                        <span><strong>信息安全技术漫谈 论打印机的隐匿安全性 “黄点追踪技术”</strong></span><br><br>
-                        <p>发表于  2023-12-22</p>
-                    </div>
-                </a>
-
-                <!--1 博客图片模板块 -->
-                <a v-slide-in; id="blog_img" href="./post/1.Declaration of opening up a blog space/blog_page.html">
-                    <img src="./post/1.Declaration of opening up a blog space/blog_page.jpg" alt="">
-                    <div class="dock">
-                        <span><strong>开辟博客空间宣言</strong></span><br><br>
-                        <p>发表于  2023-12-21</p>
-                    </div>
-                </a>
-        </div>
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+    
+            if (!response.ok) {
+                throw new Error(`GitHub API 请求失败: ${response.status}`);
+            }
+    
+            const issues = await response.json();
+            return issues.length;
+        } catch (error) {
+            console.error('获取Issues数量时出错:', error);
+        }
+    }
+    // 调用函数并输出结果
+    getIssueCount(owner, repo).then(count => {
+        console.log(`仓库 ${owner}/${repo} 共有 ${count} 个开放的Issue`);
         
-
-        <div class="flow">
-            <!-- <div class="flow_titie"><p>心巷徊音</p></div> -->
-<!-- 
-            2 浅谈 “精神内耗” 
-            <a v-slide-in; class="flow_img" href="./flow/2.Mental exhaustion/Mental exhaustion.html"">
-                <img src="./flow/2.Mental exhaustion/Mental exhaustion.jpg" alt="404">
-                <div class="dock">
-                    <span><strong>浅谈 “精神内耗”</strong></span><br><br>
-                    <p>发表于  2023-12-12</p>
-                </div> -->
-            
-                <!-- 1 网络空间独立宣言 -->
-            <a v-slide-in v-for="n in 10" class="flow_img" href="./flow/1.Declaration of Independence of Cyberspace/Declaration of Independence of Cyberspace.html">
-                <img src="./flow/1.Declaration of Independence of Cyberspace/Declaration of Independence of Cyberspace.jpg" alt="">
-                <div class="dock">
-                    <span><strong>约翰·佩里·巴洛：独立于物理世界，与身心完全相同 — 网络空间独立宣言</strong></span><br><br>
-                    <p>发表于  2023-12-1</p>
-                </div>
-
-
-            </a>
-        </div>
-    </div>
-    </div>
-
-
-
-
-
-    </div>
+         var obj_bloger = document.getElementById('Issues').textContent = `${count} 条`;
+    });
+    
+        </script>
 </body>
 </html>
