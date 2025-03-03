@@ -305,7 +305,7 @@ body{
         }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 470px) {
     body{
         overflow: hidden;
     }
@@ -340,6 +340,10 @@ body{
             right: 45rem;
             transform:skew(92.8deg);
         }
+        .container .biaoti{
+            position: absolute;
+            bottom: 50px;
+        }
         .container .jump{
             display: flex;
             align-items: center;
@@ -349,6 +353,8 @@ body{
             letter-spacing: 4px;
             padding: 10px;
             width: 100%;
+            position: relative;
+            bottom: 120px;
         }
         .container .jump ul{
             display: block;
