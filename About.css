@@ -305,6 +305,7 @@ body{
         }
 }
 
+
 @media (max-width: 470px) {
     body{
         overflow: hidden;
@@ -318,7 +319,7 @@ body{
      */
 
     .container .Text h1{
-        font-size: 80px;
+        font-size: 70px;
         line-height: 200px;
     }
     .write_diban{
@@ -354,7 +355,7 @@ body{
             padding: 10px;
             width: 100%;
             position: relative;
-            bottom: 120px;
+            bottom: 40px;
         }
         .container .jump ul{
             display: block;
